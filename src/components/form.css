@@ -4,13 +4,13 @@
 .form-section {
   display: flex;
   justify-content: center;
-  height: 1290px;
+  height: 1000px;
   background-color: #0b0b0b;
 }
 .form-container {
   display: flex;
   width: 720px;
-  min-width: 350px;
+  min-width: 500px;
   flex-shrink: 1;
   flex-direction: column;
   align-items: center;
@@ -29,6 +29,30 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 0.5rem;
+}
+.top h2,
+.top p {
+  letter-spacing: 1.05px;
+}
+.top p {
+  color: #dd614b;
+  font-size: 1.3rem;
+}
+.mid h1 {
+  font-size: 3rem;
+  text-align: center;
+  line-height: normal;
+  letter-spacing: 2.4px;
+}
+.bottom p {
+  color: #848386;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.8px;
 }
 .login-link p {
   font-family: "Dreadful";
@@ -53,7 +77,6 @@
   border: none;
   background-color: transparent;
   width: 100%;
-  transition: opacity 0.3s ease-in-out;
 }
 .input-selector:focus {
   color: #0b0b0b;
@@ -62,10 +85,6 @@
 .line {
   width: 100%;
   border-top: solid 1px grey;
-}
-
-.mid h1 {
-  text-align: center;
 }
 
 .input-text,
@@ -87,12 +106,21 @@
   position: relative;
 }
 .button-container button {
+  font-size: 1.125rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border: none;
   color: #0b0b0b;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.9px;
+}
+.button-container img {
+  width: 100%;
+  height: 40px;
 }
 .send-form {
   width: 100%;
@@ -102,6 +130,33 @@
 }
 .forms {
   display: flex;
+  width: 100%;
+  min-width: 350px;
   gap: 70px;
   flex-direction: column;
+}
+
+@media screen and (max-width: 760px) {
+  .form-container {
+    min-width: 450px;
+  }
+  .forms {
+    width: 100%;
+    min-width: 450px;
+    gap: 1rem;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .form-container,
+  .forms {
+    min-width: 300px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .form-container,
+  .forms {
+    min-width: 200px;
+  }
 }
