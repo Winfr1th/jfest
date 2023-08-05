@@ -168,3 +168,9 @@
   line-height: 150%;
   letter-spacing: 0.7px;
 }
+
+.ima {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
