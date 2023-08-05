@@ -4,7 +4,7 @@
 .form-section {
   display: flex;
   justify-content: center;
-  height: 1000px;
+  height: 1300px;
   background-color: #0b0b0b;
 }
 .form-container {
@@ -77,6 +77,8 @@
   border: none;
   background-color: transparent;
   width: 100%;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.9px;
 }
 .input-selector:focus {
   color: #0b0b0b;
@@ -159,4 +161,10 @@
   .forms {
     min-width: 200px;
   }
+}
+.error-message {
+  color: #ee3348;
+  font-size: 0.825rem;
+  line-height: 150%;
+  letter-spacing: 0.7px;
 }
